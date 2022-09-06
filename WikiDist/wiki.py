@@ -36,6 +36,7 @@ def get_revisions(page):
     return sorted(map(int, entries))
 
 
+
 def get_revision(page, timestamp):
     try:
         page_path = "%s/%i" % (page_to_path(page), timestamp)
