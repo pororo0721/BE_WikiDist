@@ -3,6 +3,7 @@ import time
 
 from flask import Flask, abort, request, jsonify
 from flask_cors import CORS
+from main import pull_list
 
 app = Flask(__name__, static_folder='static')
 CORS(app)
