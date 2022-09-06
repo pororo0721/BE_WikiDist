@@ -47,6 +47,7 @@ def get_revision(page, timestamp):
 @app.route('/pages')
 def list_titles():
     return jsonify(titles=filter_hidden(os.listdir('WikiDist/pages')))
+    
 
 
 @app.route('/pages/<page>', methods=['GET'])
